@@ -1,0 +1,51 @@
+.pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.pagination .btn{
+    background-color: var(--dark-clr);
+    color: #fff;
+    border: none;
+
+}
+.pagination .btn:hover{
+    background-color: var(--blue-clr);
+    color: var(--dark-clr);
+}
+
+.page-item a {
+    border: 1px solid var(--blue-clr);
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--dark-clr);
+}
+
+.page-item .activePag{
+    background-color: red;
+}
+.page-item a:hover {
+    
+    border-radius: 5px;
+    color: #000;
+    background-color: var(--blue-clr);
+}
+
+/* Styles Pagination Mobile */
+@media (max-width: 768px) {
+    .pagination {
+        font-size: 12px;
+    }
+
+    .next,
+    .prev {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        font-size: 14px;
+    }
+}

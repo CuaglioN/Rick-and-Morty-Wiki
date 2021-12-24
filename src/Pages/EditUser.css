@@ -1,0 +1,23 @@
+.user-modify-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.modify-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.modify-input{
+    width: 100%;
+    transition: 0.2s;
+    border: none;
+    outline: 2px solid var(--blue-clr);
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 100, 0.35);
+    padding: 10px 15px;
+}

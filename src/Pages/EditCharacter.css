@@ -1,0 +1,38 @@
+.editWrapper{
+   
+}
+.editBtn{
+    transition: 0.4s all;
+    background-color: var(--blue-clr);
+    font-size: 1.1rem;
+    width: 50%;
+}
+.editBtn:hover{
+    background-color: var(--dark-clr);
+    color: #fff;
+    outline: 1px solid var(--blue-clr)
+}
+.form-container{
+    background-color: var(--dark-clr);
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25rem;
+}
+
+.colapse-location{
+    margin: 0;
+}
+.form-select{
+    background-color: var(--dark-clr);
+    color: #fff;
+}
+.label-style{
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width:1000px) {
+    .editBtn{
+        
+    }
+}

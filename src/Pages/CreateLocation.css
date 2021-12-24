@@ -1,0 +1,51 @@
+.createWrapper{
+    min-height:100vh;
+    background-image: url(./CreateCharacterBG.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+.createLocationBtn{
+    transition: 0.4s all;
+    background-color: var(--blue-clr);
+    font-size: 1.1rem;
+    width: 50%;
+}
+.createLocationBtn:hover{
+    background-color: var(--dark-clr);
+    color: #fff;
+    outline: 1px solid var(--blue-clr)
+}
+.form-container{
+    background-color: var(--dark-clr);
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25rem;
+}
+
+.colapse-location{
+    margin: 0;
+}
+.form-select{
+    background-color: var(--dark-clr);
+    color: #fff;
+}
+.label-style{
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width:1000px) {
+    .createLocationBtn{
+        
+    }
+}

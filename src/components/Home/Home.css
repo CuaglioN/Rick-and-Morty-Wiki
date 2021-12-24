@@ -1,0 +1,48 @@
+.homeContainer{
+  margin: 0 auto;
+}
+.titleWrap {
+  background-color: var(--dark-clr);
+  margin: 5em auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.homeTitle {
+  letter-spacing: 2px;
+  font-family: var(--font-bold);
+  font-size: 8rem;
+  background-image: url(./bg.jpg);
+  background-position: center -170px;
+  background-size: cover;
+  background-clip: text;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.filterContainer {
+  display: flex;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 30px;
+}
+
+@media screen and (max-width:500px) {
+  .homeTitle {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+  }
+
+  .filterContainer {
+    flex-direction: column;
+  }
+}

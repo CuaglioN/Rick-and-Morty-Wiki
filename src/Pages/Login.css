@@ -1,0 +1,29 @@
+.loginWrapper{
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeTitle{
+    text-shadow: 0 0 4px rgba(0,0,0,0.7 );
+    font-family: var(--font-bold);
+    font-size: clamp(4em, 5vw, 6em);
+    color: var(--blue-clr);
+    margin-bottom: 1em;
+}
+.form > p{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .registerWrapper input{
+        width:100%;
+    }
+    .registerContainer{
+        margin-bottom: 100px;
+    }
+
+}

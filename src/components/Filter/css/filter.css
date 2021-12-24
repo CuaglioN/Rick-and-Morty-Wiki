@@ -1,0 +1,81 @@
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 1em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
+  gap: 10px;
+}
+
+.btn-toggle:focus {
+  box-shadow: none !important;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+#accordion {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.accordion-item{
+  border: 1px solid var(--dark-clr);
+  background-color: #fff;
+}
+
+.accordion-item *{
+  color: var(--dark-clr);
+}
+.accordion-item *:hover{
+  color: var(--blue-clr);
+}
+.form-check:hover {
+  background-color: rgba(0, 170, 194, 0.1);
+}
+.form-check label{
+  border: 1px solid var(--dark-clr);
+  margin: 0.5em 0.5em;
+}
+.form-check label:hover{
+ background-color: var(--dark-clr);
+}
+
+.clearFilters {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: var(--bs-white);
+  margin: 20px auto;
+  width: 50%;
+  background-color: #212529;
+  font-weight: 600;
+  letter-spacing: 0.0135em;
+  transition: 0.2s;
+}
+
+.clearFilters:hover {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: black;
+  margin: 20px auto;
+  width: 50%;
+  background-color: var(--blue-clr);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}

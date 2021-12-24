@@ -1,0 +1,7 @@
+.error{
+    color:  rgb(255,30,30);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 6px 8px;
+    background-color: var(--dark-clr) !important;
+}

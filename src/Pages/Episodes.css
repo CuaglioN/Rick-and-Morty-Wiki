@@ -1,0 +1,41 @@
+.episodesTitle{
+  margin:0 auto;
+}
+.pickEpisode{
+    color: #fff;
+    background-color: var(--dark-clr);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+.episodeSelect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.episodesWrapper{
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--dark-clr);
+    margin: 0 auto;
+    width: 75%;
+    padding: 2em 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+.episodeName{
+    font-size: 2.8rem;
+    color: var(--blue-clr) !important;
+}
+.episodesContainer{
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1000px) {
+    .episodesTitle{
+        font-size: 5rem;
+    }
+}
+
+
+
+

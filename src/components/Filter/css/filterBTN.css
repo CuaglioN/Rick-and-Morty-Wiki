@@ -1,0 +1,10 @@
+.x:checked+label {
+    background-color: var(--blue-clr);
+    color: white;
+    outline: none;
+}
+
+input[type="radio"] {
+    display: none;
+    
+}
