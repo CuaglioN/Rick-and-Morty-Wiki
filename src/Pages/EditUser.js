@@ -30,7 +30,7 @@ const EditUser = () => {
                                     flag = 1
                                 }
                             })
-                            if (flag == 0) {
+                            if (flag === 0) {
                                 apiUsersAddHTTP.post(`/user/${valores.email}/${valores.pass}/${valores.username}`)
                                     .then(response => console.log(response))
                                 navigate("/login")
@@ -57,7 +57,7 @@ const EditUser = () => {
                     if (!valores.pass) {
                         errores.pass = "Please enter your password"
                     }
-                    if (valores.confirmPass != valores.pass) {
+                    if (valores.confirmPass !== valores.pass) {
                         errores.confirmPass = "The passwords you entered do not match."
                     }
                     return errores;

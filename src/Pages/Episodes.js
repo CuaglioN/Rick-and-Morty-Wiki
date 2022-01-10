@@ -9,7 +9,7 @@ const Episodes = () => {
 
   let [results, setResults] = useState([]);
   let [info, setInfo] = useState([]);
-  let { air_date, name } = info;/* delete episode */
+  let { air_date, name } = info;
   let [id, setID] = useState(1);
 
 
@@ -19,7 +19,6 @@ const Episodes = () => {
   const rickAndMorty2HTPP = axios.create();
 
   let params = `${id}`;
-  // let api = `https://rickandmortyapi.com/api/episode/${id}`;
   let url = "";
   let aux = [];
 

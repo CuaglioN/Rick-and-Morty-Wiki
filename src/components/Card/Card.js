@@ -7,7 +7,7 @@ const Card = ({ page, results }) => {
 
   if (results) {
     display = results.map((x) => {
-      let { id, image, name, status, location } = x;
+      let { id, image, name, status } = x;
       return (
         <div className="cardContainer" data-aos="flip-right">
           <Link

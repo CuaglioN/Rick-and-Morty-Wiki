@@ -36,18 +36,18 @@ function App() {
         <Navbar users={user} />
         <div className="container-fluid appContainer">
           <Routes>
-            <Route exact path="/" element={user.username != "" ? <Home usuario={user} /> : <Login />} />
+            <Route exact path="/" element={user.username !== "" ? <Home usuario={user} /> : <Login />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/register" element={<Register />} />
-            <Route path="/:id" element={user.username != "" ? <CardDetails /> : <Login />} />
-            <Route path="/episodes" element={user.username != "" ? <Episodes /> : <Login />} />
-            <Route path="/episodes/:id" element={user.username != "" ? <CardDetails /> : <Login />} />
-            <Route path="/location" element={user.username != "" ? <Location /> : <Login />} />
-            <Route path="/location/:id" element={user.username != "" ? <CardDetails /> : <Login />} />
-            <Route path="/CreateCharacter" element={user.username != "" ? <CreateCharacter /> : <Login />} />
-            <Route path="/CreateLocation" element={user.username != "" ? <CreateLocation /> : <Login />} />
-            <Route path="/EditUser" element={user.username != "" ? <EditUser /> : <Login />} />
-            <Route path="/EditCharacter" element={user.username != "" ? <EditCharacter /> : <Login />} />
+            <Route path="/:id" element={user.username !== "" ? <CardDetails /> : <Login />} />
+            <Route path="/episodes" element={user.username !== "" ? <Episodes /> : <Login />} />
+            <Route path="/episodes/:id" element={user.username !== "" ? <CardDetails /> : <Login />} />
+            <Route path="/location" element={user.username !== "" ? <Location /> : <Login />} />
+            <Route path="/location/:id" element={user.username !== "" ? <CardDetails /> : <Login />} />
+            <Route path="/CreateCharacter" element={user.username !== "" ? <CreateCharacter /> : <Login />} />
+            <Route path="/CreateLocation" element={user.username !== "" ? <CreateLocation /> : <Login />} />
+            <Route path="/EditUser" element={user.username !== "" ? <EditUser /> : <Login />} />
+            <Route path="/EditCharacter" element={user.username !== "" ? <EditCharacter /> : <Login />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

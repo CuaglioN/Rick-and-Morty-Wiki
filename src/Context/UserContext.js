@@ -1,4 +1,4 @@
-import React, { createContext, useMemo, useState, useContext } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 const UserContext = createContext();
 const initialValue = { username: "", pass: "" }

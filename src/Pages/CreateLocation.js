@@ -1,4 +1,3 @@
-import InputGroup from "../components/Filter/category/InputGroup";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./CreateLocation.css"
@@ -7,16 +6,11 @@ function CreateCharacter() {
     let [info, setInfo] = useState([]);
     let [number, setNumber] = useState(1);
 
-    // let api = `https://rickandmortyapi.com/api/location/${number}`;
-
     const rickAndMortyHTPP = axios.create({
         baseURL: `https://rickandmortyapi.com/api/location`
     });
 
-    const rickAndMorty2HTPP = axios.create();
-
     let params = `${number}`;
-    let url = "";
 
     useEffect(() => {
         (async function () {
