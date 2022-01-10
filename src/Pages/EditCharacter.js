@@ -16,6 +16,7 @@ function EditCharacter() {
     });
 
     let params = `${number}`;
+    let url = "";
 
     useEffect(() => {
         (async function () {
